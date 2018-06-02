@@ -12,8 +12,8 @@ export class MapComponent implements OnInit {
   ngOnInit() {
   }
 
-  latitude: number = 51.678418;
-  longitude: number = 7.809007;
+  latitude: number = 48.855314;
+  longitude: number = 2.345883;
   locationChosen = false;
 
   onChoseLocation(event){
