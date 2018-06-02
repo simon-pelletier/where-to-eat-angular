@@ -10,16 +10,30 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.findMe()
   }
 
-  latitude: number = 48.855314;
-  longitude: number = 2.345883;
-  locationChosen = false;
+  lat: number = 48.855314;
+  lng: number = 2.345883;
+  locationFound = false;
 
-  onChoseLocation(event){
-    this.latitude = event.coords.lat;
-    this.longitude = event.coords.lng;
-    this.locationChosen = true;
+  /*onChoseLocation(event){
+    this.lat = event.coords.lat;
+    this.lng = event.coords.lng;
+    //this.locationChosen = true;
+  }*/
+
+  private findMe(){
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+        this.locationFound = true;
+      });
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
   }
+
 
 }
