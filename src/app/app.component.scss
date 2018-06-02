@@ -1,3 +1,14 @@
-agm-map{
+app-content{
+  background-color: #dddddd;
   height: 100vh;
+}
+app-map{
+  padding: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  app-content{
+    background-color: #dddddd;
+    height: 50vh;
+  }
 }
