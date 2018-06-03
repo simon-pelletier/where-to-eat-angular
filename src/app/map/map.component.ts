@@ -10,12 +10,16 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // Geo Location
     this.findMe()
   }
 
+  // Paris Coords
   lat: number = 48.855314;
   lng: number = 2.345883;
   locationFound = false;
+
+
 
   /*onChoseLocation(event){
     this.lat = event.coords.lat;

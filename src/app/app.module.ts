@@ -5,12 +5,14 @@ import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ContentComponent } from './content/content.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    ContentComponent
+    ContentComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
