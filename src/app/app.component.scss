@@ -1,6 +1,7 @@
 app-content{
   background-color: #dddddd;
   height: 100vh;
+  overflow-y: scroll;
 }
 app-map{
   padding: 0px;
@@ -12,3 +13,14 @@ app-map{
     height: 50vh;
   }
 }
+
+
+
+/* CUSTOM NAV DESIGN PART */
+::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: #000000; }
+::-webkit-scrollbar-button:hover{ background-color: #000000; }
+::-webkit-scrollbar-thumb{ background-color: #c42a29; }
+::-webkit-scrollbar-thumb:hover{ background-color: #c42a29; }
+::-webkit-scrollbar-track{ background-color: #ffff; }
+::-webkit-scrollbar-track:hover{ background-color: #fff; }
+::-webkit-scrollbar{ width: 3px; }
