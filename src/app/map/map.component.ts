@@ -11,10 +11,6 @@ export class MapComponent implements OnInit {
   constructor(private _localRestaurantsService: LocalRestaurantsService) { }
 
   localRestaurants:any = [];
-  neLat;
-  neLng;
-  swLat;
-  swLng;
 
   ngOnInit() {
     // Geo Location
@@ -25,21 +21,17 @@ export class MapComponent implements OnInit {
     );
   }
 
-  boundsChange(latLngBounds: LatLngBounds): void {
-    //console.log('bounds changed ' + latLngBounds);
-    this.neLat = latLngBounds.getNorthEast().lat();
-    this.neLng = latLngBounds.getNorthEast().lng();
-    this.swLat = latLngBounds.getSouthWest().lat();
-    this.swLng = latLngBounds.getSouthWest().lng();
+  boundsChange(latLngBounds) {
+    this._localRestaurantsService.neLat = latLngBounds.getNorthEast().lat();
+    this._localRestaurantsService.neLng = latLngBounds.getNorthEast().lng();
+    this._localRestaurantsService.swLat = latLngBounds.getSouthWest().lat();
+    this._localRestaurantsService.swLng = latLngBounds.getSouthWest().lng();
   }
 
   // Paris Coords
   lat: number = 48.855314;
   lng: number = 2.345883;
   locationFound = false;
-
-
-
 
   public iconUrl = 'assets/img/marker.svg';
 
@@ -61,6 +53,10 @@ export class MapComponent implements OnInit {
     }
   }
 
+  public isVisible(){
+    return true;
+  }
+/*
   private isVisible(i){
 
     if (this.localRestaurants[i].lat < this.neLat && this.localRestaurants[i].lat > this.neLng){
@@ -71,12 +67,12 @@ export class MapComponent implements OnInit {
       return false;
     }
 
-    /*if(this.getBounds().contains(marker.getPosition())){
+    if(this.getBounds().contains(marker.getPosition())){
       return true;
     } else {
       return false;
-    }*/
+    }
 
   }
-
+*/
 }

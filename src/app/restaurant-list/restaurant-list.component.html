@@ -3,7 +3,13 @@
 </div>
 
 <div class="restaurant row" *ngFor="let restaurant of localRestaurants; let i = index" [attr.data-index]="i">
-  <hr>
-  <img class="streetViewImage col-md-4 col-sm-2 col-xs-4" src="https://maps.googleapis.com/maps/api/streetview?size=100x100&location= {{restaurant.lat}} , {{restaurant.long}} &fov=90&heading=235&pitch=10&key=AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4"/>
-  <div class="col-md-8 col-sm-10 col-xs-8"><span class="restaurantName">{{i+1}} {{restaurant.restaurantName}}</span><br/>{{restaurant.address}}</div>
+  <div class="row">
+    <hr>
+    <img class="streetViewImage col-md-4 col-sm-2 col-xs-4" src="https://maps.googleapis.com/maps/api/streetview?size=100x100&location= {{restaurant.lat}} , {{restaurant.long}} &fov=90&heading=235&pitch=10&key=AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4"/>
+    <div class="col-md-8 col-sm-10 col-xs-8"><span class="restaurantName">{{i+1}} {{restaurant.restaurantName}}</span><br/>{{restaurant.address}}</div>
+  </div>
+  <div class="row">
+    <hr>
+    <div *ngFor="let rating of localRestaurants[i].ratings; let j = index">{{rating.stars}} {{rating.comment}}</div>
+  </div>
 </div>

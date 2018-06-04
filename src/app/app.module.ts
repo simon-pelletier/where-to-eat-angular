@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ContentComponent } from './content/content.component';
-import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
     AppComponent,
     MapComponent,
     ContentComponent,
-    RestaurantComponent,
     RestaurantListComponent
   ],
   imports: [

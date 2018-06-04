@@ -10,6 +10,7 @@ export class RestaurantListComponent implements OnInit {
 
   localRestaurants:any = [];
 
+
   constructor(private _localRestaurantsService: LocalRestaurantsService) { }
 
   ngOnInit() {
@@ -17,5 +18,8 @@ export class RestaurantListComponent implements OnInit {
       data => this.localRestaurants = data
     );
   }
+
+
+
 
 }
