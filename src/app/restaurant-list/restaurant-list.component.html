@@ -1,4 +1,8 @@
-<div class="restaurant" *ngFor="let restaurant of localRestaurants">
+<div id="noteFilter">
+  Notes minimum et maximum
+</div>
+
+<div class="restaurant" *ngFor="let restaurant of localRestaurants; let i = index" [attr.data-index]="i">
   <hr>
-  <div>{{restaurant.restaurantName}}<br/>{{restaurant.address}}</div>
+  <div><span id="restaurantId">{{i+1}}</span> {{restaurant.restaurantName}}<br/>{{restaurant.address}}</div>
 </div>
