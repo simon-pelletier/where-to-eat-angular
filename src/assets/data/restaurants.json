@@ -194,7 +194,7 @@
    {
       "restaurantName":"Brofffnco",
       "address":"39 Rue des Petites Écuries, 75010 Paris",
-      "lat":42.522419,
+      "lat":42.122419,
       "long":2.829946,
       "ratings":[
          {
@@ -219,7 +219,7 @@
       "restaurantName":"Brofffnco",
       "address":"39 Rue des Petites Écuries, 75010 Paris",
       "lat":42.566507,
-      "long":2.865732,
+      "long":2.365732,
       "ratings":[
          {
             "stars":2,
@@ -242,7 +242,7 @@
    {
       "restaurantName":"Brofffnco",
       "address":"39 Rue des Petites Écuries, 75010 Paris",
-      "lat":42.522419,
+      "lat":42.922419,
       "long":2.829946,
       "ratings":[
          {
@@ -266,8 +266,8 @@
    {
       "restaurantName":"Brofffnco",
       "address":"39 Rue des Petites Écuries, 75010 Paris",
-      "lat":42.566507,
-      "long":2.865732,
+      "lat":42.466507,
+      "long":2.565732,
       "ratings":[
          {
             "stars":2,
@@ -290,8 +290,8 @@
    {
       "restaurantName":"Brofffnco",
       "address":"39 Rue des Petites Écuries, 75010 Paris",
-      "lat":42.522419,
-      "long":2.829946,
+      "lat":42.222419,
+      "long":2.529946,
       "ratings":[
          {
             "stars":2,

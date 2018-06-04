@@ -1,4 +1,9 @@
-<agm-map [latitude]="lat" [longitude]="lng" >
+<agm-map (boundsChange)="boundsChange($event)"
+[latitude]="lat"
+[longitude]="lng"
+[fullscreenControl]="true"
+[zoom]="7"
+ >
   <!--(mapClick)="onChoseLocation($event)"-->
   <agm-marker
     [latitude]="lat"
@@ -7,8 +12,11 @@
     *ngIf="locationFound">
   </agm-marker>
   <agm-marker
-    *ngFor="let m of localRestaurants; let i = index;"
+    *ngFor="let m of localRestaurants; let i = index"
+    [attr.data-index]="i"
     [latitude]="m.lat"
-    [longitude]="m.long">
+    [longitude]="m.long"
+    [label]="i+1+''"
+    [title]="m.restaurantName">
   </agm-marker>
 </agm-map>
