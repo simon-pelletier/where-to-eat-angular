@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalRestaurantsService } from '../local-restaurants.service';
 
 @Component({
   selector: 'app-map',
@@ -7,17 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _localRestaurantsService: LocalRestaurantsService) { }
+
+  localRestaurants:any = [];
 
   ngOnInit() {
     // Geo Location
     this.findMe()
+    this._localRestaurantsService.getRestaurants().subscribe(
+      data => this.localRestaurants = data
+    );
   }
 
   // Paris Coords
   lat: number = 48.855314;
   lng: number = 2.345883;
   locationFound = false;
+
+
 
   public iconUrl = 'assets/img/marker.svg';
 

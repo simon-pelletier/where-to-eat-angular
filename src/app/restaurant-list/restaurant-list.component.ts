@@ -1,5 +1,5 @@
+import { Component, OnInit, Input } from '@angular/core';
 import { LocalRestaurantsService } from '../local-restaurants.service';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-restaurant-list',

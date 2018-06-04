@@ -6,4 +6,9 @@
     [iconUrl]="iconUrl"
     *ngIf="locationFound">
   </agm-marker>
+  <agm-marker
+    *ngFor="let m of localRestaurants; let i = index;"
+    [latitude]="m.lat"
+    [longitude]="m.long">
+  </agm-marker>
 </agm-map>
