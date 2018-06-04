@@ -19,7 +19,7 @@ export class MapComponent implements OnInit {
   lng: number = 2.345883;
   locationFound = false;
 
-
+  public iconUrl = 'assets/img/marker.svg';
 
   /*onChoseLocation(event){
     this.lat = event.coords.lat;
@@ -38,6 +38,5 @@ export class MapComponent implements OnInit {
       alert("Geolocation is not supported by this browser.");
     }
   }
-
 
 }
