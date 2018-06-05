@@ -11,7 +11,6 @@
   <div class="row rating" id="rating{{i+1}}">
     <hr>
     <div *ngFor="let rating of localRestaurants[i].ratings; let j = index">
-      
       {{rating.stars}} {{rating.comment}}
     </div>
   </div>
