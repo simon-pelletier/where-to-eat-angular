@@ -19,6 +19,11 @@ export class RestaurantListComponent implements OnInit {
     );
   }
 
+  private restaurantExtend(){
+    console.log('hum');
+    //$('#rating' + index).css.hide();
+  }
+
 
 
 
