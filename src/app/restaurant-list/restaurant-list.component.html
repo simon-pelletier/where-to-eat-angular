@@ -2,8 +2,8 @@
   Notes minimum et maximum
 
   <div id="filter">
-    <star-rating id="minStars" [starType]="'svg'" [rating]="0" [step]="0.5" [showHalfStars]="true"></star-rating>
-    <star-rating id="maxStars" [starType]="'svg'" [rating]="5" [step]="0.5" [showHalfStars]="true"></star-rating>
+    <star-rating id="minStars" (ratingChange)="onRatingChangeMin($event)" [starType]="'svg'" [rating]="ratingMin" [step]="0.5" [showHalfStars]="true"></star-rating>
+    <star-rating id="maxStars" (ratingChange)="onRatingChangeMax($event)" [starType]="'svg'" [rating]="ratingMax" [step]="0.5" [showHalfStars]="true"></star-rating>
   </div>
 
 </div>

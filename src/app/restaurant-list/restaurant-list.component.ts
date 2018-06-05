@@ -12,7 +12,8 @@ export class RestaurantListComponent implements OnInit {
 
   restaurantClicked;
 
-
+  ratingMin:number = 1;
+  ratingMax:number = 5;
 
   constructor(private _localRestaurantsService: LocalRestaurantsService) { }
 
@@ -39,6 +40,20 @@ export class RestaurantListComponent implements OnInit {
     }
   }
 
+  public onRatingChangeMin(e){
+    if (this.ratingMax >= e.rating){
+      this.ratingMin = e.rating;
+    } else {
+      this.ratingMax = e.rating;
+    }
+  }
+  public onRatingChangeMax(e){
+    if (this.ratingMin <= e.rating){
+      this.ratingMax = e.rating;
+    } else {
+      this.ratingMin = e.rating;
+    }
+  }
 
 
 
