@@ -1,38 +1,35 @@
 <div id="rateFilter">
   Notes minimum et maximum
-
   <div id="filter">
     <star-rating id="minStars" (ratingChange)="onRatingChangeMin($event)" [starType]="'svg'" [rating]="ratingMin" [step]="0.5" [showHalfStars]="true"></star-rating>
     <star-rating id="maxStars" (ratingChange)="onRatingChangeMax($event)" [starType]="'svg'" [rating]="ratingMax" [step]="0.5" [showHalfStars]="true"></star-rating>
   </div>
-
 </div>
 
-<div class="restaurant" *ngFor="let restaurant of localRestaurants; let i = index" [attr.data-index]="i">
-
-  <div class="restaurantElt row" (click)="restaurantExtend($event, i)">
-    <hr>
-    <img class="streetViewImage col-xs-4" src="https://maps.googleapis.com/maps/api/streetview?size=100x100&location= {{restaurant.lat}} , {{restaurant.long}} &fov=90&heading=235&pitch=10&key=AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4"/>
-    <div class="col-xs-8">
-      <star-rating [starType]="'svg'" [rating]="1.5" [readOnly]="true" [step]="0.5" [showHalfStars]="true"></star-rating>
-      <br/><br/>
-      <span class="restaurantName">{{i+1}} {{restaurant.restaurantName}}</span>
-      <br/>
-      {{restaurant.address}}
-    </div>
-  </div>
-
-  <div *ngIf="selectedRestaurant(i)" class="comments" id="rating{{i+1}}">
-
-    <div *ngFor="let rating of localRestaurants[i].ratings; let j = index">
-      <div>
+  <div class="restaurant" *ngFor="let restaurant of localRestaurants; let i = index" [attr.data-index]="i">
+    <!--<div *ngIf="filteredRestaurant(i)">-->
+    <div *ngIf="filteredRestaurant(i)">
+      <div class="restaurantElt row" (click)="restaurantExtend($event, i)">
         <hr>
-        <star-rating [starType]="'svg'" [rating]="rating.stars" [readOnly]="true" [step]="0.5" [showHalfStars]="true"></star-rating>
-        <br/><br/>
-        {{rating.comment}} <br/>
+        <img class="streetViewImage col-xs-4" src="https://maps.googleapis.com/maps/api/streetview?size=100x100&location= {{restaurant.lat}} , {{restaurant.long}} &fov=90&heading=235&pitch=10&key=AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4"/>
+        <div class="col-xs-8">
+          <star-rating [starType]="'svg'" [rating]="ratingAverage(i)" [readOnly]="true" [step]="0.5" [showHalfStars]="true"></star-rating>
+          <br/><br/>
+          <span class="restaurantName">{{i+1}} {{restaurant.restaurantName}}</span>
+          <br/>
+          {{restaurant.address}}
+        </div>
+      </div>
+
+    <div *ngIf="selectedRestaurant(i)" class="comments" id="rating{{i+1}}">
+      <div *ngFor="let rating of localRestaurants[i].ratings; let j = index">
+        <div>
+          <hr>
+          <star-rating [starType]="'svg'" [rating]="rating.stars" [readOnly]="true" [step]="0.5" [showHalfStars]="true"></star-rating>
+          <br/><br/>
+          {{rating.comment}} <br/>
+        </div>
       </div>
     </div>
-
   </div>
-
 </div>

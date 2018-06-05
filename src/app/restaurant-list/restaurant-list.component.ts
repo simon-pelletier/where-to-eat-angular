@@ -25,10 +25,8 @@ export class RestaurantListComponent implements OnInit {
 
   public restaurantExtend(event, id){
     if (this.restaurantClicked == id){
-
     } else {
       this.restaurantClicked = id;
-
     }
   }
 
@@ -40,10 +38,32 @@ export class RestaurantListComponent implements OnInit {
     }
   }
 
+  public ratingAverage(id){
+    var average = 0;
+
+    for (var i = 0; i < this.localRestaurants[id].ratings.length; i++){
+      average = average + this.localRestaurants[id].ratings[i].stars;
+    }
+    average = average / this.localRestaurants[id].ratings.length;
+
+    return average;
+  }
+
+  public filteredRestaurant(id){
+    var average = this.ratingAverage(id);
+
+    if (average >= this.ratingMin && average <= this.ratingMax){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   public onRatingChangeMin(e){
     if (this.ratingMax >= e.rating){
       this.ratingMin = e.rating;
     } else {
+      this.ratingMin = e.rating;
       this.ratingMax = e.rating;
     }
   }
@@ -51,6 +71,7 @@ export class RestaurantListComponent implements OnInit {
     if (this.ratingMin <= e.rating){
       this.ratingMax = e.rating;
     } else {
+      this.ratingMax = e.rating;
       this.ratingMin = e.rating;
     }
   }
