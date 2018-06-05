@@ -10,6 +10,9 @@ export class RestaurantListComponent implements OnInit {
 
   localRestaurants:any = [];
 
+  restaurantClicked;
+
+
 
   constructor(private _localRestaurantsService: LocalRestaurantsService) { }
 
@@ -19,9 +22,21 @@ export class RestaurantListComponent implements OnInit {
     );
   }
 
-  private restaurantExtend(){
-    console.log('hum');
-    //$('#rating' + index).css.hide();
+  public restaurantExtend(event, id){
+    if (this.restaurantClicked == id){
+
+    } else {
+      this.restaurantClicked = id;
+
+    }
+  }
+
+  public selectedRestaurant(id){
+    if (this.restaurantClicked == id){
+      return true;
+    } else {
+      return false;
+    }
   }
 
 

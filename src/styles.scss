@@ -1,8 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Override colors by using scss variables */
+$color-negative-rating: #c42a29 !default;
+$color-ok-rating: #c42a29 !default;
+$color-positive-rating: #c42a29 !default;
+$color-default-rating: #c42a29 !default;
+
 @import '~css-star-rating/scss/star-rating';
 app-content{
   overflow-x: hidden;
 }
 app-map{
   overflow-x: hidden;
+}
+.rating{
+  //flex: none;
+  //justify-content: flex-start!important;
+  float: left!important;
+  //position: absolute;
+  outline: none;
 }

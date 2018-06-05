@@ -17,9 +17,24 @@
 hr{
   border: 1px solid #c42a29!important;
 }
-.rating{
-  margin: 5px;
+.comments{
+  //margin: 5px;
   hr{
     border: 1px solid #c1c1c1!important;
   }
+}
+.restaurantElt{
+  cursor: pointer;
+}
+#maxStars{
+  float: right!important;
+  margin-right: 10px;
+}
+#minStars{
+  float: left!important;
+  margin-left: 10px;
+}
+#filter{
+  padding-top: 20px;
+
 }
