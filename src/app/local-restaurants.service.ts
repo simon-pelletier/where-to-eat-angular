@@ -12,7 +12,7 @@ export class LocalRestaurantsService {
   public neLat;
   public neLng;
   public swLat;
-  public swLng;
+  public swLng; 
 
   constructor(private _http: Http) { }
 
@@ -20,5 +20,5 @@ export class LocalRestaurantsService {
     return this._http.get(this._url)
       .pipe(map((response: Response) => response.json()));
   }
- 
+
 }
