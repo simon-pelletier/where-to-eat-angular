@@ -20,5 +20,5 @@ export class LocalRestaurantsService {
     return this._http.get(this._url)
       .pipe(map((response: Response) => response.json()));
   }
-
+ 
 }
