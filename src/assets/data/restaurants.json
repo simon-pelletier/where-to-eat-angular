@@ -82,11 +82,11 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":1,
+            "stars":5,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":2,
+            "stars":3,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -106,11 +106,11 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":1,
+            "stars":2,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":2,
+            "stars":4,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -130,11 +130,11 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":1,
+            "stars":5,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":2,
+            "stars":5,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -150,7 +150,7 @@
       "long":4.809836,
       "ratings":[
          {
-            "stars":2,
+            "stars":5,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -162,7 +162,7 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":3,
+            "stars":2,
             "comment":"Tout simplement mon restaurant préféré !"
          }
       ]
@@ -178,7 +178,7 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":1,
+            "stars":4,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -186,7 +186,7 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":3,
+            "stars":4,
             "comment":"Tout simplement mon restaurant préféré !"
          }
       ]
@@ -198,7 +198,7 @@
       "long":2.829946,
       "ratings":[
          {
-            "stars":2,
+            "stars":4,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -206,7 +206,7 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":2,
+            "stars":5,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -246,7 +246,7 @@
       "long":2.829946,
       "ratings":[
          {
-            "stars":2,
+            "stars":1,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -254,7 +254,7 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":2,
+            "stars":3,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -278,7 +278,7 @@
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":2,
+            "stars":1,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
@@ -294,19 +294,19 @@
       "long":2.529946,
       "ratings":[
          {
+            "stars":5,
+            "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
+         },
+         {
+            "stars":4,
+            "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
+         },
+         {
             "stars":2,
             "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
          },
          {
-            "stars":1,
-            "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
-         },
-         {
-            "stars":2,
-            "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
-         },
-         {
-            "stars":3,
+            "stars":5,
             "comment":"Tout simplement mon restaurant préféré !"
          }
       ]

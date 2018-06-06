@@ -12,6 +12,7 @@ export class MapComponent implements OnInit {
 
   localRestaurants:any = [];
 
+
   ngOnInit() {
     // Geo Location
     this.findMe()
@@ -33,13 +34,22 @@ export class MapComponent implements OnInit {
   lng: number = 2.345883;
   locationFound = false;
 
+  locationChosen = false;
+  selectedLocationLat:number;
+  selectedLocationLng:number;
+
+
   public iconUrl = 'assets/images/marker.svg';
 
-  /*onChoseLocation(event){
-    this.lat = event.coords.lat;
-    this.lng = event.coords.lng;
-    //this.locationChosen = true;
-  }*/
+  private onChoseLocation(event){
+    //console.log(event.coords.lat);
+    //console.log(event.coords.lng);
+
+    this.selectedLocationLat = event.coords.lat;
+    this.selectedLocationLng = event.coords.lng;
+    this._localRestaurantsService.newRestaurant(event);
+    this.locationChosen = true;
+  }
 
   private findMe(){
     if (navigator.geolocation) {

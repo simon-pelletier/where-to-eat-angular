@@ -12,13 +12,18 @@ export class LocalRestaurantsService {
   public neLat;
   public neLng;
   public swLat;
-  public swLng; 
+  public swLng;
 
   constructor(private _http: Http) { }
 
   getRestaurants(){
     return this._http.get(this._url)
       .pipe(map((response: Response) => response.json()));
+  }
+
+  public newRestaurant(event){
+    //console.log(event.coords.lat);
+    //console.log(event.coords.lng);
   }
 
 }
