@@ -21,7 +21,7 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
     HttpModule,
     StarRatingModule.forRoot(),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4'
+      apiKey: 'AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4',
     })
   ],
   providers: [],

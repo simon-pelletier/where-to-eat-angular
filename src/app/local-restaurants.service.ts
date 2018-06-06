@@ -9,10 +9,10 @@ export class LocalRestaurantsService {
 
   private _url: string = "assets/data/restaurants.json"
 
-  neLat;
-  neLng;
-  swLat;
-  swLng;
+  public neLat;
+  public neLng;
+  public swLat;
+  public swLng;
 
   constructor(private _http: Http) { }
 
@@ -21,7 +21,4 @@ export class LocalRestaurantsService {
       .pipe(map((response: Response) => response.json()));
   }
 
-  public isVisible(){
-    return true;
-  }
 }

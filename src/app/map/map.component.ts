@@ -53,26 +53,4 @@ export class MapComponent implements OnInit {
     }
   }
 
-  public isVisible(){
-    return true;
-  }
-/*
-  private isVisible(i){
-
-    if (this.localRestaurants[i].lat < this.neLat && this.localRestaurants[i].lat > this.neLng){
-      //console.log('oooo');
-      return true;
-    } else {
-      console.log('NOP');
-      return false;
-    }
-
-    if(this.getBounds().contains(marker.getPosition())){
-      return true;
-    } else {
-      return false;
-    }
-
-  }
-*/
 }

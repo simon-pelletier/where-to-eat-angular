@@ -8,7 +8,7 @@
 
   <div class="restaurant" *ngFor="let restaurant of localRestaurants; let i = index" [attr.data-index]="i">
     <!--<div *ngIf="filteredRestaurant(i)">-->
-    <div *ngIf="filteredRestaurant(i)">
+    <div *ngIf="filteredRestaurant(i) && isVisible(i)">
       <div class="restaurantElt row" (click)="restaurantExtend($event, i)">
         <hr>
         <img class="streetViewImage col-xs-4" src="https://maps.googleapis.com/maps/api/streetview?size=100x100&location= {{restaurant.lat}} , {{restaurant.long}} &fov=90&heading=235&pitch=10&key=AIzaSyCY2YSw8RU-njyTNebCy0-FlH33LleOt-4"/>

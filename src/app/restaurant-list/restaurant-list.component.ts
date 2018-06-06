@@ -41,17 +41,15 @@ export class RestaurantListComponent implements OnInit {
   public ratingAverage(id){
     var average = 0;
 
-    for (var i = 0; i < this.localRestaurants[id].ratings.length; i++){
+    for (let i = 0; i < this.localRestaurants[id].ratings.length; i++){
       average = average + this.localRestaurants[id].ratings[i].stars;
     }
     average = average / this.localRestaurants[id].ratings.length;
-
     return average;
   }
 
   public filteredRestaurant(id){
     var average = this.ratingAverage(id);
-
     if (average >= this.ratingMin && average <= this.ratingMax){
       return true;
     } else {
@@ -76,6 +74,17 @@ export class RestaurantListComponent implements OnInit {
     }
   }
 
-
+  public isVisible(i){
+    if (
+      this.localRestaurants[i].lat < this._localRestaurantsService.neLat
+      && this.localRestaurants[i].lat > this._localRestaurantsService.swLat
+      && this.localRestaurants[i].long < this._localRestaurantsService.neLng
+      && this.localRestaurants[i].long > this._localRestaurantsService.swLng
+    ){
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 }
