@@ -68,7 +68,7 @@ export class RestaurantListComponent implements OnInit {
   public onRatingChangeMax(e){
     if (this.ratingMin <= e.rating){
       this.ratingMax = e.rating;
-    } else {
+    } else { 
       this.ratingMax = e.rating;
       this.ratingMin = e.rating;
     }
@@ -87,6 +87,6 @@ export class RestaurantListComponent implements OnInit {
     }
   }
 
-  
+
 
 }
