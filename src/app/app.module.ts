@@ -4,6 +4,7 @@ import { AgmCoreModule } from '@agm/core';
 import { HttpModule } from '@angular/http';
 import { StarRatingModule } from 'angular-star-rating';
 
+
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ContentComponent } from './content/content.component';
@@ -14,7 +15,7 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
     AppComponent,
     MapComponent,
     ContentComponent,
-    RestaurantListComponent
+    RestaurantListComponent,
   ],
   imports: [
     BrowserModule,

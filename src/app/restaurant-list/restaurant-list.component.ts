@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LocalRestaurantsService } from '../local-restaurants.service';
 
+
 @Component({
   selector: 'app-restaurant-list',
   templateUrl: './restaurant-list.component.html',
@@ -68,7 +69,7 @@ export class RestaurantListComponent implements OnInit {
   public onRatingChangeMax(e){
     if (this.ratingMin <= e.rating){
       this.ratingMax = e.rating;
-    } else { 
+    } else {
       this.ratingMax = e.rating;
       this.ratingMin = e.rating;
     }
